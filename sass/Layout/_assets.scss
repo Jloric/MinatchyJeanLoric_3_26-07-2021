@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family:'roboto',arial,serif;
+}
+body{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color:$black;
+    font-weight:normal;
+}
+.header__logo{
+    width: 103%;
+    background-color:$white;
+    margin-right: -10px;
+    box-shadow: 0 15px 0 -11px #d9d9d9 ;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+
+//footer
+.logo{
+    font-family: 'Shrikhand';
+    color:$white;
+    margin:0 0 -10px 25px;
+    padding-top:15px;
+}
+footer{
+    background-color:$black;
+    margin:0 0 -5% -5%;
+    ul{
+      padding-left: 25px;
+      list-style:none;
+    }
+    a{
+      color:$white;
+    }
+    
+}
+  
