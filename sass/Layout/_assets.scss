@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     font-family:'roboto',arial,serif;
 }
 body{
@@ -10,19 +9,6 @@ a{
     text-decoration: none;
     color:$black;
     font-weight:normal;
-}
-
-.header__restaurant
-{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    margin-bottom: 15px;
-    padding-top: 15px;
-    align-items:center;
-    a{
-        margin:  0 60px 0 -55px;
-    }
 }
 .background-photo img {
     width: 100%;
@@ -55,15 +41,74 @@ a{
     background-color: $white;
     border-radius: 15px 10px;
     height:80px;
+    width:95%;
+    overflow: hidden;
+    
     a{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content:space-between;
+        line-height: 10px;
+        height:80px;
+        width:95%;
+        position: relative;
+        &:focus{
+         .plat__statique{
+
+                border-right: $lightgray 3px solid;
+                animation-duration: 400ms;
+                animation-name: slidein;
+                animation-iteration-count: 1;
+                animation-direction: normal; 
+                animation-fill-mode: forwards;
+            }
+         .plat__checks--rot{
+            transform: rotate(-1turn);
+            
+         }
+         
+        }
+    }
+    &__statique{
         display: flex;
         flex-direction:row;
         justify-content:space-between;
-        padding: 0 15px;
-        line-height: 10px;
+        width: 101%;
+        height:80px;
+        background-color: $white;
+        z-index: 2;
+        padding:0 15px;
+        position: absolute;
+        &__description{
+            text-overflow: ellipsis;
+        }
+
     }
-    &__description{
-        text-overflow: ellipsis;
+    &__checks{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        background-color: $color-tertiary;
+        color:$white;
+        font-size: 2em;
+        width:10%;
+        margin-right:-37px;
+        padding-left: 10px;
+        &--rot{
+            transition: transform 500ms 500ms ease-in-out;
+        }
+        
+        
+    }
+    
+}
+@keyframes slidein {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 90%;
     }
 }
 //footer
@@ -76,6 +121,7 @@ a{
 footer{
     background-color:$black;
     margin:0 0 -5% -5%;
+    padding-left:20px;
     ul{
       padding-left: 25px;
       list-style:none;
