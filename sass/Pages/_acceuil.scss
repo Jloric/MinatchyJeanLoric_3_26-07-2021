@@ -1,4 +1,4 @@
-.header{
+.acceuil{
   display:flex;
   flex-direction: column;
   text-align:center;
@@ -6,15 +6,7 @@
   margin-left: -8px;
   width: 100%;
 }
-.header__logo--acceuil{
-  width: 100%;
-  background-color:$white;
-  box-shadow: 0 15px 0 -11px #d9d9d9 ;
-  text-align:center;
-  margin-bottom:5px;
-}
-
-.header__input{
+.acceuil__input{
   background-color:#eaeaea;
   width:100%;
   height:50px;
@@ -37,27 +29,70 @@
   }
 }
 
-.header__text{
+.acceuil__text{
   
   width:90%;
-  margin:auto;
+  margin-bottom:20px;
+  margin-left: 40px;
   p{
     margin-top:-10px;
   }
 }
 
+.section1{
+  width: 98%;
+  margin: auto;
+}
+.guide{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  // h2{
+  //   margin-left: 5%;
+  // }
+  //pas pris en compte !
+  &__etapes{
+    .violet{
+      color: $color-primary;
+    }
+    .grey{
+      color: #9c9c9c;
+    }
+    p{
+      margin-left: -20px;
+    }
+    span{
+      border-radius:50%;
+      background-color: $color-primary;
+      padding:4px 6px;
+      text-align: center;
+      color: $white;
+      margin-left: -37px;
+      
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $lightgray;
+    width: 90%;
+    margin: 0 5% 10px 5%;
+    border-radius:20px ;
+  }
+}
 .section2{
     width:98%;
     margin:auto;
 }
 .restaurant{
-  width:103%;
+  width:99%;
   background-color: $lightgray;
   margin-left: -4px;
   padding: 10px;
   &__choix{
     width:auto;
-    max-width: 98%;
+    max-width: 97%;
     height:360px;
     margin-bottom: 20px;
     display:flex;

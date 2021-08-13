@@ -1,0 +1,30 @@
+.conteneur_menu{
+    position:relative;
+}
+.menu__photo img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+.menu{
+    margin-top:-50px;
+    border-radius: 50px 50px 0 0;
+    background-color:$lightgray;
+    width: 95%;
+    padding:2.5% 2.5%;
+    position:absolute;
+    z-index:2;
+    &__titre{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__categorie{
+        height:40px;
+        font-weight: normal;
+        width: 54px;
+        border-bottom: 3px solid $color-tertiary;
+        margin-bottom:10px;
+    }
+}

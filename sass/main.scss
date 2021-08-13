@@ -2,8 +2,8 @@
 
 @import"./Base/polices";
 
-@import"./Layout/assets";
-@import"./Layout/header.scss";
+@import"./Layout/assets","./Layout/header","./Layout/keyframes","./Layout/footer","./Layout/logo","./Layout/menu","./Layout/plat";
+
 @import"./Composants/button";
 
 @import "./Pages/acceuil";
