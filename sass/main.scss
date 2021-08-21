@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "./Utils/variables"; 
 
 @import"./Base/polices";
@@ -6,4 +8,4 @@
 
 @import"./Composants/button";
 
-@import "./Pages/acceuil";
+@import "./Pages/accueil";

@@ -5,24 +5,23 @@
     height:80px;
     width:100%;
     overflow: hidden;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.83,1.66,.55,.44);
+    animation-fill-mode: both;
+    transform: scale(0);
     
     a{
         display: flex;
-        flex-direction:row-reverse;
+        flex-direction:row;
         justify-content:space-between;
         line-height: 10px;
         height:80px;
-        width:95%;
+        width:100%;
         position: relative;
         &:focus{
          .plat__statique{
-
-                border-right: $lightgray 3px solid;
-                animation-duration: 400ms;
-                animation-name: slidein;
-                animation-iteration-count: 1;
-                animation-direction: normal; 
-                animation-fill-mode: forwards;
+                position: relative;
             }
          .plat__checks--rot{
             transform: rotate(-1turn);
@@ -35,14 +34,25 @@
         display: flex;
         flex-direction:row;
         justify-content:space-between;
-        width: 101%;
+        width: 90%;
         height:80px;
         background-color: $white;
         z-index: 3;
         padding:0 15px;
         position: absolute;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         &__description{
+            white-space: nowrap;
             text-overflow: ellipsis;
+            overflow: hidden;
+            p {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            //ellipsis ne marche pas a voir!
         }
 
     }
@@ -54,9 +64,8 @@
         background-color: $color-tertiary;
         color:$white;
         font-size: 2em;
-        width:10%;
-        margin-right:-37px;
-        padding-left: 10px;
+        width:80px;
+        height:80px;
         &--rot{
             transition: transform 500ms 150ms ease-in-out;
         }
@@ -65,3 +74,8 @@
     }
     
 }
+@for $i from 1 to 9 {
+    .delay-#{$i} {
+        animation-delay: $i*100ms;
+    }
+  }

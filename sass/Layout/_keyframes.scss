@@ -1,8 +1,17 @@
-@keyframes slidein {
-    from {
-        width: 100%;
+@keyframes itemAppear {
+    0% {
+      transform: scale(0);
+      transform-origin: 40px 160px;
     }
-    to {
-        width: 90%;
+    100% {
+      transform: scale(1);
+      transform:translateY(160);
     }
 }
+  
+@keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+} 

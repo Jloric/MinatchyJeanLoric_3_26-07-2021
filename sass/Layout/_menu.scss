@@ -1,10 +1,11 @@
 .conteneur_menu{
     position:relative;
 }
-.menu__photo img {
+.background__photo {
     width: 100%;
     height: auto;
     max-height: 300px;
+    object-fit: cover;
 }
 .menu{
     margin-top:-50px;
@@ -12,7 +13,7 @@
     background-color:$lightgray;
     width: 95%;
     padding:2.5% 2.5%;
-    position:absolute;
+    position:relative;
     z-index:2;
     &__titre{
         display:flex;
@@ -26,5 +27,55 @@
         width: 54px;
         border-bottom: 3px solid $color-tertiary;
         margin-bottom:10px;
+    }
+    &__btn {
+        height: 2rem;
+        width: 2rem;
+        border: transparent 0px solid;
+        padding: 0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        cursor: pointer;
+        position: relative;
+        background-color: black;
+        
+        &:active::before {
+          opacity: 1;
+        }
+        
+        &::before {
+          opacity: 0;
+          transition: 0.5s;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+        }
+      }
+    
+    &__like {
+        transition-duration: .25s;
+        background-color: #f6f6f6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        mix-blend-mode: lighten;
+    }
+    
+    &__btn:active {
+        .menu__like {
+          &--noBg {
+            opacity: 0;
+          }
+        }
     }
 }
