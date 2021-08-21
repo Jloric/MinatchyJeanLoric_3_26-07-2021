@@ -44,42 +44,57 @@
   margin: auto;
 }
 .guide{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  // h2{
-  //   margin-left: 5%;
-  // }
-  //pas pris en compte !
+  padding: 2rem 1rem;
+  .container{
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+  }
+  &__title{
+    margin-top:0;
+  }
   &__etapes{
-    .violet{
-      color: $color-primary;
-    }
-    .grey{
-      color: #9c9c9c;
-    }
-    p{
-      margin-left: -20px;
-    }
-    span{
-      border-radius:50%;
-      background-color: $color-primary;
-      padding:4px 6px;
-      text-align: center;
-      color: $white;
-      margin-left: -37px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
+    .guide__etape{
+      padding: 1.5rem;
+      margin: 1rem 0 1rem .75rem;
+      box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+      border-radius: 1.25rem;
+      background-color: #f6f6f6;
+      display: flex;
+      // flex-direction: row;
+      // justify-content:space-around;
+      position: relative;
+      &:first-child{
+        margin-top:0 ;
+      }
+      &::before{
+        background: $color-primary;
+        counter-increment: compteListe 1;
+        content: counter(compteListe) " ";
+        height:1.5rem;
+        width:1.5rem;
+        border-radius:100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        left: -.75rem;
+      }
+      .guide__icon{
+        color: #9c9c9c;
+        margin-right: 10px;
+      }
+  
       
     }
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: $lightgray;
-    width: 90%;
-    margin: 0 5% 10px 5%;
-    border-radius:20px ;
+
   }
+  
 }
 .section2{
     width:98%;
