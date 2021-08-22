@@ -34,7 +34,7 @@
         display: flex;
         flex-direction:row;
         justify-content:space-between;
-        width: 90%;
+        width: 100%;
         height:80px;
         background-color: $white;
         z-index: 3;
@@ -43,6 +43,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        box-sizing: border-box;
         &__description{
             white-space: nowrap;
             text-overflow: ellipsis;
