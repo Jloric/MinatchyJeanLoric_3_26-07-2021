@@ -15,7 +15,6 @@
         display: flex;
         flex-direction:row;
         justify-content:space-between;
-        line-height: 10px;
         height:80px;
         width:100%;
         position: relative;
@@ -44,7 +43,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         box-sizing: border-box;
-        &__description{
+        &__descriptions{
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -53,7 +52,11 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
             }
-            //ellipsis ne marche pas a voir!
+            h3{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden; 
+            }
         }
 
     }
@@ -79,4 +82,4 @@
     .delay-#{$i} {
         animation-delay: $i*100ms;
     }
-  }
+}
