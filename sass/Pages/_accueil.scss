@@ -102,7 +102,7 @@
 .restaurants{
   width:100%;
   background-color: $lightgray;
-  padding: 20px 20px 100px 20px;
+  padding: 20px 20px 50px 20px;
   box-sizing: border-box;
 }
 
@@ -116,6 +116,7 @@
   color: inherit;
   display: block;
   box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+  margin-bottom:50px;
   
 
   &__img {
