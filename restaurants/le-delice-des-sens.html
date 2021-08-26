@@ -8,31 +8,30 @@
    <title>Le délice des sens</title>
  </head>
  <body>
-  <header class="header__logo">
-    <a href="../Accueil.html">
-      <img src="../images/logo/ohmyfood@2x.svg" alt="logo">
+  <header class="header__logo ">
+    <a href="../index.html">
+      <h1>ohmyfood</h1>
+    </a>
+    <a href="../index.html" class=" header__arrow" >
+      <i class="fa fa-arrow-left" ></i>
     </a>
   </header>
-  <div class="header__arrow">
-    <a href="../Accueil.html"><i class="fa fa-arrow-left"></i></a>
-  </div>
 
-  <div class="conteneur_menu">
-    <div class="menu__photo">
-      <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le delice des sens">
-    </div>
-  
-    <div class="menu">
+  <img class="background__photo" src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le delice des sens">
+
+  <div class="menu container">
       <div class="menu__titre">
         <h2>Le delice des sens</h2>
-        <i class="far fa-heart"></i>
+        <button class="menu__btn">
+          <i class="fa-2x fa-heart far menu__like menu__like--noBg"></i> 
+          <i class="fa-2x fa-heart fas menu__like menu__like--bg" ></i>  
+        </button>
       </div>
-    
+
+    <!-- Section Entrée -->
       <div class=menu__categorie>
         <h2>Entrées</h2>
       </div>
-    
-      <!-- Section Entrée -->
       <section >
         <div class="plat">
             <a href="#0">
@@ -50,7 +49,7 @@
               </div>
             </a>
         </div>
-        <div class="plat">
+        <div class="plat delay-1">
             <a href="#0">
                 <div class="plat__statique">
                     <div class="plat__statique__descriptions">
@@ -67,7 +66,7 @@
                 </div>
             </a>
         </div>
-        <div class="plat">
+        <div class="plat delay-2">
             <a href="#0">
                 <div class="plat__statique">
                   <div class="plat__statique__descriptions">
@@ -92,7 +91,7 @@
     
       <!-- Section plat -->
       <section>
-        <div class="plat">
+        <div class="plat delay-3">
             <a href="#0">
                 <div class="plat__statique">
                     <div class="plat__statique__descriptions">
@@ -109,7 +108,7 @@
                 </div>
             </a>
         </div>
-        <div class="plat">
+        <div class="plat delay-4">
             <a href="#0">
                 <div class="plat__statique">
                   <div class="plat__statique__descriptions">
@@ -126,7 +125,7 @@
                 </div>
             </a>
         </div>
-        <div class="plat">
+        <div class="plat delay-5">
             <a href="#0">
                 <div class="plat__statique">
                   <div class="plat__statique__descriptions">
@@ -151,7 +150,7 @@
     
       <!-- Section dessert -->
       <section>
-        <div class="plat">
+        <div class="plat delay-6">
             <a href="#0">
                 <div class="plat__statique">
                   <div class="plat__statique__descriptions">
@@ -168,7 +167,7 @@
                 </div>
             </a>
         </div>
-        <div class="plat">
+        <div class="plat delay-7">
           <a href="#0">
               <div class="plat__statique">
                 <div class="plat__statique__descriptions">
@@ -185,7 +184,7 @@
               </div>
           </a>
         </div>
-        <div class="plat">
+        <div class="plat delay-8">
             <a href="#0">
                 <div class="plat__statique">
                   <div class="plat__statique__descriptions">
@@ -206,11 +205,11 @@
         </div>
       </section>
     
-      <div class="btn btn--gradien">
+      <div class="btn btn--gradien btn--large">
         <button>Commander</button>
       </div>
-    </div>
   </div>
+  
 
 
 
