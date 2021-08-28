@@ -12,11 +12,15 @@
     padding:2.5% 2.5%;
     position:relative;
     z-index:2;
-    &__titre{
+    &__header{
         display:flex;
         flex-direction:row;
         justify-content: space-between;
         align-items: center;
+        
+    }
+    &__titre{
+      font-family: "Shrikhand";
     }
     &__categorie{
         height:40px;

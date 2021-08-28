@@ -24,6 +24,9 @@
             margin:0 25%;
             width:50%;
             box-shadow: 0 15px 0 -11px #d9d9d9;
+            &:hover{
+                background:linear-gradient($color-secondaryl,$color-primaryl);
+            }
         }
     }
     &--large{

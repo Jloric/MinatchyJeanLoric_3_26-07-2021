@@ -71,13 +71,30 @@ h1 {
 
 @keyframes itemAppear {
   0% {
-    transform: scale(0);
     transform-origin: 40px 160px;
     transform: translateY(160px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
   }
   100% {
-    transform: scale(1);
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80px;
   }
 }
 @keyframes loader {
@@ -137,11 +154,14 @@ footer a {
   position: relative;
   z-index: 2;
 }
-.menu__titre {
+.menu__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.menu__titre {
+  font-family: "Shrikhand";
 }
 .menu__categorie {
   height: 40px;
@@ -214,11 +234,11 @@ footer a {
   width: 100%;
   position: relative;
 }
-.plat a:focus .plat__statique {
-  position: relative;
-}
-.plat a:focus .plat__checks--rot {
+.plat a:hover .plat__checks--rot {
   transform: rotate(-1turn);
+}
+.plat a:hover .plat__checks--slidein {
+  animation: slidein 1s 200ms ease-in-out;
 }
 .plat__statique {
   display: flex;
@@ -229,7 +249,7 @@ footer a {
   background-color: #fff;
   z-index: 3;
   padding: 0 15px;
-  position: absolute;
+  position: relative;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -258,7 +278,7 @@ footer a {
   background-color: #99e2d0;
   color: #fff;
   font-size: 2em;
-  width: 80px;
+  width: 0px;
   height: 80px;
 }
 .plat__checks--rot {
@@ -346,6 +366,9 @@ footer a {
   margin: 0 25%;
   width: 50%;
   box-shadow: 0 15px 0 -11px #d9d9d9;
+}
+.btn--gradien button:hover {
+  background: linear-gradient(#fc89db, #9866d4);
 }
 .btn--large button {
   margin: 10% 25%;

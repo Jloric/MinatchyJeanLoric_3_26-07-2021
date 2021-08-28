@@ -18,13 +18,12 @@
         height:80px;
         width:100%;
         position: relative;
-        &:focus{
-         .plat__statique{
-                position: relative;
-            }
+        &:hover{
          .plat__checks--rot{
             transform: rotate(-1turn);
-            
+         }
+         .plat__checks--slidein{
+            animation: slidein 1s 200ms ease-in-out;  
          }
          
         }
@@ -38,7 +37,7 @@
         background-color: $white;
         z-index: 3;
         padding:0 15px;
-        position: absolute;
+        position: relative;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -68,7 +67,7 @@
         background-color: $color-tertiary;
         color:$white;
         font-size: 2em;
-        width:80px;
+        width:0px;
         height:80px;
         &--rot{
             transition: transform 500ms 150ms ease-in-out;
