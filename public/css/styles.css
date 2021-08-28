@@ -103,6 +103,13 @@ footer ul {
 footer ul li {
   margin-bottom: 5px;
 }
+footer ul li:nth-child(1) i {
+  margin-right: 18px;
+}
+footer ul i {
+  color: #fff;
+  margin-right: 10px;
+}
 footer a {
   color: #fff;
 }

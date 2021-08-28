@@ -6,6 +6,18 @@ footer{
       list-style:none;
       li {
         margin-bottom: 5px;
+        &:nth-child(1){
+          i{
+            margin-right:18px;
+          }
+        }
+      }
+      i{
+        color:$white;
+        margin-right:10px;
+        
+        
+        
       }
     }
     a{
