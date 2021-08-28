@@ -4,23 +4,29 @@
   text-align:center;
   background-color:$lightgray;
   margin-left: -8px;
-  width: 100%;
+  width: 101%;
 }
 .acceuil__input{
   background-color:#eaeaea;
   width:100%;
-  height:50px;
-  margin-left: -20px;
-  padding: 2% 19%;
+  height:auto;
+  max-height:100px;
+  padding: 2% 37%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   input{
-    width:50%;
+    width:150px;
     border:unset;
     background-color: unset;
-    padding-top: 18px;
     font-weight: bold;
+    margin-left:10px;
     &:focus{
-      border:none;
-      outline:none;
+      border: 1px black solid;
+      outline: none;
+      background-color:$lightgray;
     }
     ::placeholder{
       color:$black;
@@ -72,6 +78,12 @@
         margin-top:0 ;
         @media (min-width:1024px) {
           margin-top: 16px;
+        }
+      }
+      &:nth-child(3){
+        background-color:lighten($color-primary,33%);
+        i{
+          color:$color-primary;
         }
       }
       &::before{
