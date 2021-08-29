@@ -90,11 +90,11 @@ h1 {
   }
 }
 @keyframes slidein {
-  0% {
-    width: 0px;
+  from {
+    transform: translateX(0);
   }
-  100% {
-    width: 80px;
+  to {
+    transform: translateX(80);
   }
 }
 @keyframes loader {
@@ -110,7 +110,7 @@ h1 {
   }
 }
 footer {
-  background-color: black;
+  background-color: #353535;
   padding-bottom: 16px;
 }
 footer ul {
@@ -238,7 +238,7 @@ footer a {
   transform: rotate(-1turn);
 }
 .plat a:hover .plat__checks--slidein {
-  animation: slidein 1s 200ms ease-in-out;
+  animation: slidein 800ms ease-in-out;
 }
 .plat__statique {
   display: flex;
@@ -270,16 +270,24 @@ footer a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.plat__statique__prix {
+  margin-top: 30px;
+}
+.plat__statique p {
+  margin-top: -10px;
+}
 .plat__checks {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-color: #99e2d0;
   color: #fff;
   font-size: 2em;
   width: 0px;
   height: 80px;
+  left: -80px;
 }
 .plat__checks--rot {
   transition: transform 500ms 150ms ease-in-out;
