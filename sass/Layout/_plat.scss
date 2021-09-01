@@ -23,7 +23,7 @@
             transform: rotate(-1turn);
          }
          .plat__checks--slidein{
-            animation: slidein 1s 200ms ease-in-out;  
+            animation: slidein 800ms ease-in-out;  
          }
          
         }
@@ -57,6 +57,12 @@
                 overflow: hidden; 
             }
         }
+        &__prix{
+            margin-top:30px;
+        }
+        p{
+            margin-top: -10px;
+        }
 
     }
     &__checks{
@@ -64,11 +70,13 @@
         flex-direction:column;
         justify-content:center;
         align-items: center;
+        position: relative;
         background-color: $color-tertiary;
         color:$white;
         font-size: 2em;
         width:0px;
         height:80px;
+        left: -80px;
         &--rot{
             transition: transform 500ms 150ms ease-in-out;
         }

@@ -20,11 +20,12 @@
 }
 
 @keyframes slidein {
-  0%{
-    width:0px;
+  from {
+    transform: translateX(0);
   }
-  100%{
-    width:80px
+
+  to {
+    transform: translateX(80);
   }
 }
 @keyframes loader {
