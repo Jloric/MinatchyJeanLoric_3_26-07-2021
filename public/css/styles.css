@@ -236,7 +236,6 @@ footer a {
   font-size: 2em;
   width: 0px;
   height: 80px;
-  left: -80px;
   transition: width 1s ease-in-out;
 }
 .plat__checks--rot {
