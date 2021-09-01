@@ -90,10 +90,10 @@ h1 {
   }
 }
 @keyframes slidein {
-  from {
+  0% {
     width: 0;
   }
-  to {
+  100% {
     width: 80px;
   }
 }
@@ -196,7 +196,7 @@ footer a {
   transform: rotate(-1turn);
 }
 .plat a:hover .plat__checks--slidein {
-  animation: slidein 800ms ease-in-out;
+  animation: slidein 2s ease-in-out forwards;
 }
 .plat__statique {
   display: flex;
