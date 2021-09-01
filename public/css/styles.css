@@ -89,14 +89,6 @@ h1 {
     opacity: 1;
   }
 }
-@keyframes slidein {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80px;
-  }
-}
 @keyframes loader {
   100% {
     opacity: 0;
@@ -196,7 +188,7 @@ footer a {
   transform: rotate(-1turn);
 }
 .plat a:hover .plat__checks--slidein {
-  animation: slidein 1s ease-in-out forwards;
+  width: 80px;
 }
 .plat__statique {
   display: flex;
@@ -245,6 +237,7 @@ footer a {
   width: 0px;
   height: 80px;
   left: -80px;
+  transition: width 1s ease-in-out;
 }
 .plat__checks--rot {
   transition: transform 500ms 150ms ease-in-out;
