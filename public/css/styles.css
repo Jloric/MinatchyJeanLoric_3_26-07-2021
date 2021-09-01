@@ -91,10 +91,10 @@ h1 {
 }
 @keyframes slidein {
   from {
-    transform: translateX(0);
+    width: 0;
   }
   to {
-    transform: translateX(80);
+    width: 80px;
   }
 }
 @keyframes loader {
@@ -239,7 +239,6 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   background-color: #99e2d0;
   color: #fff;
   font-size: 2em;
