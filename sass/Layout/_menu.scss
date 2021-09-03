@@ -17,10 +17,12 @@
         flex-direction:row;
         justify-content: space-between;
         align-items: center;
+        height:100px;
         
     }
     &__titre{
       font-family: "Shrikhand";
+      font-size:2.3em;
     }
     &__categorie{
         height:40px;
