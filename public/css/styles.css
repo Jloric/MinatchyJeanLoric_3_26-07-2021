@@ -382,9 +382,11 @@ footer a {
 }
 
 .acceuil__text {
-  width: 90%;
-  margin-bottom: 20px;
-  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 270px;
 }
 .acceuil__text p {
   margin-top: -10px;
