@@ -4,6 +4,8 @@
     position: relative;
     height:60px;
     z-index: 1000;
+    box-sizing: border-box;
+    height:90px;
     &__logo{
         font-family: "Shrikhand";
         margin: 0;
